@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            24 Games Solver by irfansofyana
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+
+    <body>
+        <div class="body">
+            <div class="header">
+                <h2>24 Games Solver</h2>
+            </div>
+            <h2>Input your numbers: </h2>
+            <form name = "inputBox" method = "POST">
+                <input type="number" name="firstNumber" autofocus="" value={{ firstNumber }}> 
+                <input type="number" name="secondNumber" autofocus="" value={{ secondNumber }}>
+                <br>
+                <input type="number" name="thirdNumber" autofocus="" value = {{ thirdNumber }}>
+                <input type="number" name="fourthNumber" autofocus="" value = {{ fourthNumber }}>
+                <br>
+                <input type="submit" value = "Solve">
+                <input type="button" value = "Reset" onclick= " window.location.href='{{ url_for('home') }}' " >
+            </form>
+        </div>
+        
+        <!-- <p>Hasil penjumlahan keempat bilangannya adalah {{ hasil }}</p> -->
+        <h3>{{ banyak }} solution(s) found</h3>
+        <div class="answer">
+            {% for answer in hasil: %}
+                <div>{{ answer }}</div>
+            {% endfor%}
+        </div>
+        <div class="footer">
+            <p> Copyright &copy 2019 Irfan Sofyana Putra </p>
+        </div>
+    </body>
+</html>

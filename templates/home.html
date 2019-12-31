@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            24 Games Solver by irfansofyana
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+
+    <body>
+        <div class="header">
+            <h2>24 Games Solver</h2>
+        </div>
+
+        <div class="body">
+            <h2>Input your numbers: </h2>
+                <form name = "inputBox" method = "POST">
+                    <input type="number" name="firstNumber" autofocus="" > 
+                    <input type="number" name="secondNumber" autofocus="">
+                    <br>
+                    <input type="number" name="thirdNumber" autofocus="">
+                    <input type="number" name="fourthNumber" autofocus="">
+                    <br>
+                    <input type="submit" value = "Solve">
+                    <input type="reset" value = "Reset">
+                </form>
+        </div>
+
+        <div class="footer">
+            <p> Copyright &copy 2019 Irfan Sofyana Putra </p>
+        </div>
+    </body>
+</html>

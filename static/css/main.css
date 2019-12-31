@@ -1,0 +1,77 @@
+body{
+    padding-top: 100px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    background-color: rgb(233, 233, 233);
+    text-align: left;
+    color: black;
+    left: 0;
+    font-size: 10pt;
+    font-family: sans-serif;
+    text-indent: 10pt;
+}
+
+.footer{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+    padding: 5px 0;
+    color: black;
+    left: 0;
+}
+
+.footer{
+    bottom: 0;
+}
+
+input[type=number]{
+    width: 30%;
+    margin: 5px 10px;
+    height: 30px;
+}
+
+input[type=submit], [type=reset], [type=button]{
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin: 5px 5px;
+    cursor: pointer;  
+}
+
+input[type=submit]{
+    background-color: #4eb839;
+}
+
+input[type=reset], [type=button]{
+    background-color: rgb(255, 0, 0);
+}
+
+.answer{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.answer > div{
+    background-color: rgb(233, 233, 233);
+    width: 150px;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 12px;
+}
