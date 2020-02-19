@@ -3,6 +3,7 @@
 ## How to Run
 - Make sure you have python and pip in your system.
 - Make sure you have installed flask. If you haven't install yet, you can install it with command:
+
   for python3:
 
   ```
@@ -15,6 +16,7 @@
   pip install flask
   ```
 - Run app with command:
+  
   for python3:
   
   ```
